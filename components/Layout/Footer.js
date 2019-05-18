@@ -67,7 +67,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className='wrapper'>
+        <div className='navLinks'>
           <p className='heading'>Support</p>
           <ul>
             <li>
@@ -93,7 +93,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className='wrapper'>
+        <div className='navLinks'>
           <p className='heading'>Download</p>
           <ul>
             <li>
@@ -114,7 +114,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className='wrapper'>
+        <div className='navLinks'>
           <p className='heading'>Contact us</p>
           <ul className='contactInfo'>
             <li>
