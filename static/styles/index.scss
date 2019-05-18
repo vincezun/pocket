@@ -1,0 +1,22 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+*:root {
+  font-size: 10px;
+}
+
+.blueContainer {
+  background-image: url('/static/images/blue-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+}

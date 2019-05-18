@@ -1,0 +1,11 @@
+@import '_colors.scss';
+
+.line {
+  height: 1px;
+  width: calc(100% - 5.2em);
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  background-color: $c-300-blue;
+  margin-top: 2em;
+}

@@ -1,0 +1,80 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.darkBlueContainer {
+  background-color: $c-900-blue;
+  .pageWrapper {
+    // position: relative;
+    padding: 5.6em 1.9em 2.4em;
+
+    .heading {
+      color: $c-white;
+      font-size: 1.8em;
+      font-family: $f-medium;
+    }
+
+    p,
+    a {
+      color: $c-300-blue;
+      font-size: 1.4em;
+      font-family: $f-regular;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .companyDesc {
+      p {
+        margin-top: 1.3em;
+        line-height: 1.7em;
+      }
+
+      .socialLinks {
+        display: flex;
+        flex-direction: row;
+        margin: 1.9em -0.7em 0em;
+
+        li {
+          padding: 0em 0.8em;
+        }
+      }
+    }
+
+    .wrapper {
+      margin-top: 5em;
+
+      ul {
+        margin-top: 1.5em;
+
+        li {
+          line-height: 3em;
+        }
+      }
+    }
+
+    .contactInfo li {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        align-self: flex-start;
+        padding: 1.1em 0;
+      }
+
+      p {
+        line-height: 1.8em;
+        padding: 0.5em 1em 0.5em;
+      }
+    }
+
+    .copyright {
+      margin-top: 4em;
+      line-height: 1.7em;
+    }
+  }
+}

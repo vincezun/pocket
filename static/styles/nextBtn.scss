@@ -1,0 +1,12 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.nextBtn {
+  height: 35px;
+  width: 35px;
+  background-color: rgba($c-500-blue, 0.2);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
