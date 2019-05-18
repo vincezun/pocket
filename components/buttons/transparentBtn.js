@@ -3,10 +3,11 @@ import '../../static/styles/transparentBtn.scss';
 
 class transparent extends React.Component {
   render() {
+    const { link, styled, name } = this.props;
     return (
-      <Link href={this.props.link}>
-        <a className='transparentBtn' style={this.props.styled}>
-          {this.props.name}
+      <Link href={link}>
+        <a className='transparentBtn' style={styled}>
+          {name}
         </a>
       </Link>
     );

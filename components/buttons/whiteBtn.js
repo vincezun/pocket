@@ -3,10 +3,11 @@ import '../../static/styles/whiteBtn.scss';
 
 class whiteBtn extends React.Component {
   render() {
+    const { link, styled, name } = this.props;
     return (
-      <Link href={this.props.link}>
-        <a className='whiteBtn' style={this.props.styled}>
-          {this.props.name}
+      <Link href={link}>
+        <a className='whiteBtn' style={styled}>
+          {name}
         </a>
       </Link>
     );
