@@ -12,11 +12,221 @@
   font-size: 10px;
 }
 
-.blueContainer {
+p {
+  font-family: $f-regular;
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+.wrapper {
+  margin: 0em 1.9em;
+}
+
+.app {
+  width: 251px;
+}
+
+.blueBg {
   background-image: url('/static/images/blue-bg.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 120vh;
   width: 100%;
+  color: $c-white;
+  text-align: center;
+
+  .wrapper {
+    position: absolute;
+  }
+
+  .sec1 {
+    margin-top: 11.5em;
+
+    h1 {
+      font-family: $f-bold;
+      font-size: 3.7em;
+      text-align: left;
+    }
+
+    p {
+      margin-top: 2em;
+      text-align: left;
+    }
+
+    .buttons {
+      display: flex;
+      margin-top: 3.5em;
+    }
+
+    .pocketScreen {
+      margin-top: 5.9em;
+    }
+  }
+}
+
+h2 {
+  font-family: $f-bold;
+  font-size: 3.5em;
+  line-height: 1.4em;
+  color: $c-900-blue;
+}
+
+.sec2 {
+  text-align: center;
+  margin-top: 25em;
+
+  p {
+    color: $c-200-gray;
+    margin-top: 2em;
+  }
+}
+
+.sec3 {
+  text-align: center;
+  margin-top: 5em;
+
+  .appWallets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    div {
+      box-shadow: 0px 1px 6px 2px rgba(93, 112, 223, 0.1);
+      border-radius: 10px;
+      height: 324px;
+      width: 271px;
+
+      &:nth-last-child(-n + 2) {
+        margin-top: 3em;
+      }
+    }
+
+    .money {
+      width: 39px;
+    }
+
+    .report {
+      width: 55px;
+    }
+
+    .secure {
+      width: 36px;
+    }
+
+    .icon {
+      margin-top: 3.5em;
+    }
+
+    figcaption {
+      font-family: $f-semibold;
+      font-size: 1.7em;
+      margin-top: 1.25em;
+      color: $c-800-gray;
+    }
+
+    p {
+      color: $c-200-gray;
+      margin: 1.5em 3em 0;
+    }
+
+    .learnMoreBtn {
+      display: flex;
+      justify-content: center;
+      margin: 2.5em 0;
+    }
+  }
+}
+
+.lightBlueContainer {
+  background-color: $c-200-blue;
+  margin-top: 5.5em;
+  text-align: center;
+
+  .sec4 {
+    h2 {
+      padding-top: 0.7em;
+      text-align: left;
+    }
+
+    p {
+      color: $c-200-gray;
+      margin: 2em 0 0;
+      text-align: left;
+    }
+
+    .readMoreBtn {
+      display: flex;
+      padding: 2em 0 5.5em;
+    }
+  }
+}
+
+.blueContainer {
+  background-color: $c-500-blue;
+
+  .sec5 {
+    padding: 6em 0 15em;
+    text-align: center;
+    color: $c-white;
+
+    h2 {
+      color: $c-white;
+    }
+
+    p {
+      margin-top: 2em;
+    }
+  }
+}
+
+.sec6 {
+  background-color: $c-white;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0px 1px 10px 1px rgba(128, 83, 254, 0.1);
+  border-radius: 10px;
+  margin-top: -11em;
+  margin-left: auto;
+  margin-right: auto;
+
+  div {
+    padding: 6.5em 0 0;
+
+    &:last-child {
+      padding-bottom: 6.5em;
+    }
+  }
+
+  h3 {
+    font-family: $f-bold;
+    font-size: 4.5em;
+    color: $c-500-blue;
+  }
+
+  p {
+    font-family: $f-medium;
+    font-size: 1.8em;
+    margin-top: 0.7em;
+    color: $c-800-gray;
+  }
+}
+
+.sec7 {
+  text-align: center;
+
+  h2 {
+    padding-top: 2em;
+    text-align: left;
+  }
+
+  p {
+    color: $c-200-gray;
+    margin: 2em 0 0;
+    text-align: left;
+  }
+
+  .expensesReport {
+    margin-top: 5em;
+  }
 }
