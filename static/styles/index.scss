@@ -31,7 +31,7 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 120vh;
+  height: 500px;
   width: 100%;
   color: $c-white;
   text-align: center;
@@ -60,7 +60,7 @@ p {
     }
 
     .pocketScreen {
-      margin-top: 5.9em;
+      display: none;
     }
   }
 }
@@ -74,7 +74,7 @@ h2 {
 
 .sec2 {
   text-align: center;
-  margin-top: 25em;
+  margin-top: 5em;
 
   p {
     color: $c-200-gray;
@@ -85,56 +85,53 @@ h2 {
 .sec3 {
   text-align: center;
   margin-top: 5em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 
-  .appWallets {
+  div {
+    box-shadow: 0px 1px 6px 2px rgba(93, 112, 223, 0.1);
+    border-radius: 10px;
+    height: 324px;
+    width: 320px;
+  }
+
+  > div:nth-last-child(-n + 2) {
+    margin-top: 3em;
+  }
+
+  .money {
+    width: 39px;
+  }
+
+  .report {
+    width: 55px;
+  }
+
+  .secure {
+    width: 36px;
+  }
+
+  .icon {
+    margin-top: 3.5em;
+  }
+
+  figcaption {
+    font-family: $f-semibold;
+    font-size: 1.7em;
+    margin-top: 1.25em;
+    color: $c-800-gray;
+  }
+
+  p {
+    color: $c-200-gray;
+    margin: 1.5em 3em 0;
+  }
+
+  .learnMoreBtn {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
-
-    div {
-      box-shadow: 0px 1px 6px 2px rgba(93, 112, 223, 0.1);
-      border-radius: 10px;
-      height: 324px;
-      width: 271px;
-
-      &:nth-last-child(-n + 2) {
-        margin-top: 3em;
-      }
-    }
-
-    .money {
-      width: 39px;
-    }
-
-    .report {
-      width: 55px;
-    }
-
-    .secure {
-      width: 36px;
-    }
-
-    .icon {
-      margin-top: 3.5em;
-    }
-
-    figcaption {
-      font-family: $f-semibold;
-      font-size: 1.7em;
-      margin-top: 1.25em;
-      color: $c-800-gray;
-    }
-
-    p {
-      color: $c-200-gray;
-      margin: 1.5em 3em 0;
-    }
-
-    .learnMoreBtn {
-      display: flex;
-      justify-content: center;
-      margin: 2.5em 0;
-    }
+    margin: 2.5em 0;
   }
 }
 
@@ -226,6 +223,12 @@ h2 {
     text-align: left;
   }
 
+  .readMoreBtn {
+    display: flex;
+    justify-content: left;
+    margin-top: 3.5em;
+  }
+
   .expensesReport {
     margin-top: 5em;
   }
@@ -238,12 +241,15 @@ h2 {
 
 .testimonial {
   width: 100%;
-  height: 90px;
+  height: 300px;
   margin-top: 5em;
 }
 
 .sec9 {
   text-align: center;
+  // display: flex;
+  // flex-flow: row wrap;
+  // justify-content: center;
 
   .aryaStark,
   .tyrionLannister,
@@ -272,24 +278,660 @@ h2 {
     color: $c-900-gray;
     font-size: 1.3em;
     margin-top: 2.25em;
-    margin-bottom: 3em;
+    padding-bottom: 3em;
+    // padding: 0em 1.5em;
     line-height: 1.8em;
   }
 
   .arya,
   .tyrion,
   .khal {
-    border-bottom: 1px solid rgba($c-100-gray, 0.42);
+    box-shadow: 0px 0px 8px rgba(0, 80, 225, 0.16);
+    border-radius: 10px;
+    width: 320px;
+    height: 320px;
+    background-color: $c-white;
   }
+
+  > div:first-child {
+    margin-top: -20.5em;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    > div:nth-last-of-type(-n + 2) {
+      margin-top: 7.5em;
+    }
+  }
+
+  // .arya {
+  //   margin-top: -21em;
+  // }
 
   .tyrion,
   .khal {
-    display: none;
+    // margin-top: 7.5em;
   }
 }
 
-.nextPrevBtn {
-  display: flex;
-  justify-content: center;
-  margin-top: 3.5em;
+.sec10 {
+  text-align: center;
+
+  .plan {
+    h2 {
+      margin-top: 3em;
+    }
+
+    p {
+      color: $c-200-gray;
+      line-height: 2em;
+      margin-top: 2.5em;
+    }
+  }
+
+  .plans {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    div:nth-child(n) {
+      margin-top: 4.5em;
+    }
+  }
+
+  .grayShapeContainer {
+    font-family: $f-semibold;
+    color: $c-500-blue;
+    background-image: url('/static/images/plans-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .blueShapeContainer {
+    font-family: $f-semibold;
+    color: $c-white;
+    background-image: url('/static/images/plans-bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  ul {
+    margin-top: 2em;
+
+    li {
+      list-style: none;
+      font-size: 1.6em;
+      font-family: $f-medium;
+      color: $c-400-gray;
+      line-height: 2.8em;
+    }
+  }
+
+  .blueShapeContainer,
+  .grayShapeContainer {
+    h5 {
+      margin-top: -1em;
+      font-size: 2.3em;
+    }
+
+    h4 {
+      margin-top: 0.7em;
+      font-size: 3.5em;
+    }
+
+    p {
+      font-size: 1.8em;
+      font-family: $f-regular;
+      margin-top: 0.3em;
+    }
+  }
+
+  .basic,
+  .standard,
+  .premium {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgba(93, 112, 223, 0.24);
+  }
+
+  // .basic {
+  //   margin-top: 5em;
+  // }
+
+  // .standard,
+  // .premium {
+  //   margin-top: 3.5em;
+  // }
+
+  .purchaseBtn {
+    display: flex;
+    justify-content: center;
+    margin: 2.5em 0em 4em;
+  }
+}
+
+.sec11 {
+  margin-top: 6em;
+
+  .wrapper {
+    padding: 6em 0em 3.5em;
+  }
+
+  h5 {
+    font-size: 2.5em;
+    font-family: $f-bold;
+    color: $c-white;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 3.5em;
+
+    li {
+      list-style: none;
+      line-height: 6em;
+
+      .appStore,
+      .googlePlay {
+        width: 270px;
+      }
+    }
+  }
+}
+
+.sec12 {
+  .latestBlogPosts {
+    margin-top: 4em;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    p {
+      margin-top: 2.5em;
+      color: $c-200-gray;
+    }
+  }
+
+  .blogs {
+    margin-top: 5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .firstBar,
+    .thirdBar {
+      display: inline-flex;
+      align-items: center;
+
+      .authorInfo {
+        figure {
+          display: inline-flex;
+          align-items: center;
+        }
+
+        figcaption {
+          font-size: 1.1em;
+          font-family: $f-bold;
+          color: $c-800-blue;
+          margin-left: 1em;
+        }
+      }
+
+      .time {
+        margin-left: 4.5em;
+
+        figure {
+          display: inline-flex;
+          align-items: center;
+
+          img {
+            width: 17px;
+          }
+        }
+
+        figcaption {
+          font-size: 1.1em;
+          font-family: $f-regular;
+          color: $c-300-gray;
+          margin-left: 0.8em;
+        }
+      }
+
+      .likes,
+      .comments {
+        margin: 1.2em 0;
+        figure {
+          display: inline-flex;
+          align-items: center;
+
+          img {
+            width: 17px;
+          }
+        }
+
+        figcaption {
+          font-size: 1.1em;
+          font-family: $f-regular;
+          color: $c-800-blue;
+          margin-left: 0.5em;
+        }
+      }
+
+      .comments {
+        margin-left: 7.5em;
+      }
+    }
+
+    p {
+      font-size: 1.1em;
+      font-family: $f-regular;
+      color: $c-300-gray;
+      margin: 1.7em 0;
+    }
+
+    .border {
+      border-top: 1px solid rgba($c-100-gray, 0.42);
+    }
+
+    .business,
+    .developer,
+    .uxUiDesign {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 320px;
+    }
+
+    .title {
+      font-size: 2.1em;
+      font-family: $f-medium;
+      color: $c-800-blue;
+      margin: 1.25em 0.85em 0.9em;
+    }
+
+    .blog1,
+    .blog2,
+    .blog3 {
+      border-radius: 10px;
+      border-left: 1px solid rgba($c-100-gray, 0.42);
+      border-right: 1px solid rgba($c-100-gray, 0.42);
+      border-bottom: 1px solid rgba($c-100-gray, 0.42);
+      width: 320px;
+    }
+
+    .blog2,
+    .blog3 {
+      margin-top: 4em;
+    }
+  }
+
+  .viewMoreBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+  }
+}
+
+.sec13 {
+  margin-top: 6em;
+  text-align: center;
+
+  .email {
+    margin-top: 2em;
+    font-size: 1.4em;
+    font-family: $f-regular;
+    color: $c-300-blue;
+    padding: 0em 1.5em;
+    line-height: 3em;
+    width: 250px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: $c-100-teal;
+    text-align: center;
+
+    &::placeholder {
+      color: $c-300-blue;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .submitBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    padding-bottom: 7em;
+  }
+
+  .subscribe {
+    border-radius: 10px;
+    box-shadow: 0px -3px 8px rgba(31, 101, 225, 0.1);
+    background-color: $c-white;
+    margin-bottom: -17.5em;
+  }
+
+  h2 {
+    padding-top: 1.25em;
+  }
+
+  .oneLine {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.subscribeDarkBlueContainer {
+  height: 200px;
+  background-color: $c-900-blue;
+  position: relative;
+  z-index: -1;
+}
+
+@media screen and (min-width: 450px) {
+  .blueBg {
+    height: 450px;
+  }
+
+  .sec1 {
+    p {
+      margin-right: 5em;
+    }
+
+    .pocketScreen {
+      display: none;
+    }
+  }
+
+  .sec2 {
+    margin-top: 5em;
+  }
+
+  .sec3 {
+    div {
+      width: 360px;
+      height: 360px;
+    }
+
+    .icon {
+      margin-top: 5.25em;
+    }
+
+    p {
+      margin-top: 2em;
+    }
+
+    figcaption {
+      margin-top: 2em;
+    }
+  }
+
+  .sec9 {
+    .arya,
+    .tyrion,
+    .khal {
+      width: 360px;
+      height: 330px;
+    }
+
+    .desc {
+      padding-bottom: 1em;
+    }
+  }
+  .sec10 {
+    .basic,
+    .standard,
+    .premium {
+      width: 360px;
+    }
+
+    .grayShapeContainer,
+    .blueShapeContainer {
+      height: 240px;
+    }
+  }
+
+  .sec13 {
+    .email {
+      margin-top: 0;
+      padding: 0;
+      height: 40px;
+      width: 310px;
+      text-align: left;
+      padding-left: 2em;
+    }
+
+    .submitBtn {
+      margin-top: 0;
+      padding-bottom: 0;
+      margin-left: -5em;
+    }
+
+    .oneLine {
+      margin-top: 3em;
+      padding-bottom: 5.5em;
+    }
+  }
+}
+
+@media only screen and(min-width: 578px) {
+  .sec2 p {
+    padding: 0em 5em;
+  }
+
+  .sec3 {
+    margin-left: 4em;
+
+    > div:nth-last-child(-n + 2) {
+      margin-top: 3em;
+    }
+  }
+
+  .sec5 p {
+    padding: 0em 5em;
+  }
+
+  .sec9 {
+    .testimonials {
+      margin: 0em 2.7em;
+    }
+  }
+
+  .sec10 {
+    .plan p {
+      padding: 0em 5em;
+    }
+
+    .plans {
+      margin: 0em 3em;
+    }
+  }
+
+  .sec11 ul li {
+    padding: 1em;
+  }
+
+  .sec12 {
+    .latestBlogPosts {
+      p {
+        padding: 0em 5em;
+      }
+    }
+
+    .blogs {
+      padding: 0em 7em;
+    }
+  }
+}
+
+@media only screen and(min-width: 774px) {
+  .blueBg {
+    height: 500px;
+
+    .sec1 {
+      display: flex;
+      flex-flow: row;
+
+      .pocketApp {
+        margin-top: 1.5em;
+      }
+
+      h1 {
+        margin-right: 3em;
+      }
+
+      p {
+        margin-right: 5em;
+      }
+
+      .pocketScreen {
+        display: block;
+        height: 459px;
+      }
+    }
+  }
+
+  .sec2 {
+    margin-top: 13em;
+  }
+
+  .sec3 {
+    margin: 5em 0;
+
+    div {
+      &:nth-last-child(-n + 2) {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-top: 4em;
+      }
+
+      &:nth-child(even) {
+        margin-left: 2em;
+      }
+    }
+  }
+  .sec4 {
+    display: flex;
+    flex-flow: row;
+
+    .financialReport {
+      height: 218px;
+    }
+
+    .financial {
+      margin: 3em 2em 1.5em;
+    }
+  }
+
+  .sec6 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 720px;
+    height: 190px;
+    align-items: center;
+
+    div {
+      padding: 0;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+
+  .sec7 {
+    display: flex;
+    flex-flow: row;
+    margin-top: 3em;
+
+    .expensesReport {
+      height: 302px;
+    }
+
+    h2 {
+      padding-top: 2.5em;
+    }
+
+    p {
+      margin-right: 2em;
+    }
+  }
+
+  .sec8 {
+    margin-top: 7.5em;
+  }
+
+  .sec9 {
+    .testimonials {
+      margin: 0;
+
+      > div:nth-last-of-type(-n + 2) {
+        margin-top: 0;
+        margin-left: 2em;
+      }
+
+      > div:last-child {
+        margin-top: 8em;
+      }
+    }
+    // .tyrion {
+    //   margin-top: -21em;
+    //   margin-left: 2em;
+    // }
+  }
+
+  .sec10 {
+    .plans {
+      margin: 0;
+      justify-content: center;
+
+      div {
+        &:nth-child(n) {
+          margin-top: 5em;
+        }
+        &:nth-last-child(-n + 2) {
+          margin-left: 2em;
+        }
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      justify-content: center;
+      padding: 0;
+      .blog2 {
+        margin-left: 4em;
+        margin-top: 0;
+      }
+    }
+  }
 }
