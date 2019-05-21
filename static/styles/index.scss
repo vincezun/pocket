@@ -31,7 +31,7 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 500px;
+  height: 470px;
   width: 100%;
   color: $c-white;
   text-align: center;
@@ -84,7 +84,7 @@ h2 {
 
 .sec3 {
   text-align: center;
-  margin-top: 5em;
+  // margin-top: 5em;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -96,8 +96,8 @@ h2 {
     width: 320px;
   }
 
-  > div:nth-last-child(-n + 2) {
-    margin-top: 3em;
+  > div:nth-child(n) {
+    margin-top: 6em;
   }
 
   .money {
@@ -278,7 +278,7 @@ h2 {
     color: $c-900-gray;
     font-size: 1.3em;
     margin-top: 2.25em;
-    padding-bottom: 3em;
+    padding: 0em 2.3em 3em;
     // padding: 0em 1.5em;
     line-height: 1.8em;
   }
@@ -288,8 +288,8 @@ h2 {
   .khal {
     box-shadow: 0px 0px 8px rgba(0, 80, 225, 0.16);
     border-radius: 10px;
-    width: 320px;
-    height: 320px;
+    width: 322px;
+    height: 275px;
     background-color: $c-white;
   }
 
@@ -305,15 +305,6 @@ h2 {
     > div:nth-last-of-type(-n + 2) {
       margin-top: 7.5em;
     }
-  }
-
-  // .arya {
-  //   margin-top: -21em;
-  // }
-
-  .tyrion,
-  .khal {
-    // margin-top: 7.5em;
   }
 }
 
@@ -408,15 +399,6 @@ h2 {
     border-radius: 10px;
     box-shadow: 0px 5px 8px rgba(93, 112, 223, 0.24);
   }
-
-  // .basic {
-  //   margin-top: 5em;
-  // }
-
-  // .standard,
-  // .premium {
-  //   margin-top: 3.5em;
-  // }
 
   .purchaseBtn {
     display: flex;
@@ -538,7 +520,7 @@ h2 {
       }
 
       .comments {
-        margin-left: 7.5em;
+        margin-left: 5.5em;
       }
     }
 
@@ -654,10 +636,16 @@ h2 {
   z-index: -1;
 }
 
+@media only screen and(min-width: 379px) {
+  // .blueBg {
+  //   height: 450px;
+  // }
+}
+
 @media screen and (min-width: 450px) {
-  .blueBg {
-    height: 450px;
-  }
+  // .blueBg {
+  //   height: 450px;
+  // }
 
   .sec1 {
     p {
@@ -675,12 +663,12 @@ h2 {
 
   .sec3 {
     div {
-      width: 360px;
-      height: 360px;
+      height: 322px;
+      width: 390px;
     }
 
     .icon {
-      margin-top: 5.25em;
+      margin-top: 3.2em;
     }
 
     p {
@@ -696,24 +684,27 @@ h2 {
     .arya,
     .tyrion,
     .khal {
-      width: 360px;
-      height: 330px;
-    }
-
-    .desc {
-      padding-bottom: 1em;
+      width: 350px;
+      height: 275px;
     }
   }
+
   .sec10 {
     .basic,
     .standard,
     .premium {
-      width: 360px;
+      width: 390px;
+      height: 650px;
     }
 
     .grayShapeContainer,
     .blueShapeContainer {
-      height: 240px;
+      height: 255px;
+
+      h5 {
+        margin-top: -3em;
+        font-size: 2.3em;
+      }
     }
   }
 
@@ -740,26 +731,44 @@ h2 {
   }
 }
 
+@media only screen and(min-width: 518px) {
+  // .blueBg {
+  //   height: 415px;
+  // }
+}
+
 @media only screen and(min-width: 578px) {
-  .sec2 p {
-    padding: 0em 5em;
-  }
+  // .sec2 p {
+  //   padding: 0em 5em;
+  // }
+
+  // .blueBg {
+  //   height: 400px;
+  // }
 
   .sec3 {
-    margin-left: 4em;
+    // margin-left: 4em;
 
-    > div:nth-last-child(-n + 2) {
-      margin-top: 3em;
+    > div:nth-child(1) {
+      margin-right: 1.5em;
+      margin-left: 1.5em;
+    }
+
+    > div:nth-child(2) {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
     }
   }
 
-  .sec5 p {
-    padding: 0em 5em;
-  }
+  // .sec5 p {
+  //   padding: 0em 5em;
+  // }
 
   .sec9 {
     .testimonials {
-      margin: 0em 2.7em;
+      div:nth-child(2) {
+        margin-top: 7.5em;
+      }
     }
   }
 
@@ -770,6 +779,16 @@ h2 {
 
     .plans {
       margin: 0em 3em;
+
+      > div:nth-child(1) {
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+      }
     }
   }
 
@@ -783,16 +802,12 @@ h2 {
         padding: 0em 5em;
       }
     }
-
-    .blogs {
-      padding: 0em 7em;
-    }
   }
 }
 
-@media only screen and(min-width: 774px) {
+@media only screen and(min-width: 644px) {
   .blueBg {
-    height: 500px;
+    // height: 490px;
 
     .sec1 {
       display: flex;
@@ -803,51 +818,161 @@ h2 {
       }
 
       h1 {
-        margin-right: 3em;
+        margin-right: 2em;
       }
 
       p {
-        margin-right: 5em;
+        margin-right: 2em;
       }
 
       .pocketScreen {
         display: block;
         height: 459px;
+        margin-top: -4em;
+        margin-right: -1.4em;
       }
     }
   }
+
+  .sec2 {
+    margin-top: 8em;
+  }
+
+  .sec9 {
+    .testimonials {
+      > div:nth-child(2) {
+        // margin-top: 0;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:nth-child(2) {
+        // margin-top: 0;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 664px) {
+  .sec9 {
+    .testimonials {
+      > div:nth-child(2) {
+        margin-right: 4em;
+        margin-left: 4em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:nth-child(2) {
+        // margin-top: 0;
+        // margin-right: 0;
+        margin-right: 4em;
+        margin-left: 4em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 724px) {
+  .sec2 {
+    p {
+      width: 686px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .sec9 {
+    .testimonials {
+      // > div:first-child {
+      //   margin-right: 1.5em;
+      // }
+
+      // > div:nth-child(2) {
+      //   margin-top: 0;
+      //   margin-right: 0;
+      //   margin-left: 1.5em;
+      // }
+
+      .testimonials {
+        > div:nth-child(2) {
+          margin-right: 7em;
+          margin-left: 7em;
+        }
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:first-child {
+        margin-right: 1.5em;
+      }
+
+      > div:nth-child(2) {
+        margin-top: 0;
+        // margin-right: 0;
+        margin-right: 0;
+        margin-left: 1.5em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 774px) {
+  // .blueBg {
+  //   height: 500px;
+  // }
 
   .sec2 {
     margin-top: 13em;
   }
 
   .sec3 {
-    margin: 5em 0;
+    > div:last-child {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+  }
 
-    div {
-      &:nth-last-child(-n + 2) {
-        margin-top: 0;
+  .lightBlueContainer {
+    margin-top: 7em;
+
+    .sec4 {
+      display: flex;
+      flex-flow: row;
+
+      .financialReport {
+        height: 218px;
       }
 
-      &:last-child {
-        margin-top: 4em;
+      .financial {
+        margin: 3em 2em 1.5em;
       }
 
-      &:nth-child(even) {
-        margin-left: 2em;
+      .readMoreBtn {
+        padding-bottom: 8em;
       }
     }
   }
-  .sec4 {
-    display: flex;
-    flex-flow: row;
 
-    .financialReport {
-      height: 218px;
-    }
-
-    .financial {
-      margin: 3em 2em 1.5em;
+  .sec5 {
+    p {
+      width: 724px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -870,7 +995,7 @@ h2 {
   .sec7 {
     display: flex;
     flex-flow: row;
-    margin-top: 3em;
+    margin-top: 4.5em;
 
     .expensesReport {
       height: 302px;
@@ -886,26 +1011,25 @@ h2 {
   }
 
   .sec8 {
-    margin-top: 7.5em;
+    margin-top: 8em;
   }
 
   .sec9 {
     .testimonials {
-      margin: 0;
+      > div:first-child {
+        margin-right: 1.5em;
+      }
 
-      > div:nth-last-of-type(-n + 2) {
+      > div:nth-child(2) {
         margin-top: 0;
-        margin-left: 2em;
+        margin-right: 0;
+        margin-left: 1.5em;
       }
 
       > div:last-child {
-        margin-top: 8em;
+        margin-top: 6em;
       }
     }
-    // .tyrion {
-    //   margin-top: -21em;
-    //   margin-left: 2em;
-    // }
   }
 
   .sec10 {
@@ -913,24 +1037,144 @@ h2 {
       margin: 0;
       justify-content: center;
 
-      div {
-        &:nth-child(n) {
-          margin-top: 5em;
-        }
-        &:nth-last-child(-n + 2) {
-          margin-left: 2em;
-        }
+      > div:last-child {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+      }
+    }
+  }
+
+  .sec11 {
+    .blueContainer {
+      margin-top: 8em;
+    }
+  }
+
+  .sec12 {
+    .latestBlogPosts {
+      margin-top: 8em;
+    }
+
+    .blogs {
+      > div:first-child {
+        margin-right: 2em;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 2em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 846px) {
+  .lightBlueContainer {
+    .sec4 {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      p {
+        width: 519px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1006px) {
+  // .app {
+  //   width: 325px;
+  // }
+  .wrapper {
+    margin: 0em 8em;
+  }
+
+  .sec9 {
+    .testimonials {
+      > div:first-child {
+        margin-right: 1.5em;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 1.5em;
+      }
+
+      > div:last-child {
+        margin-top: 6em;
+        margin-right: 1.5em;
+        margin-left: 1.5em;
       }
     }
   }
 
   .sec12 {
     .blogs {
-      justify-content: center;
-      padding: 0;
-      .blog2 {
-        margin-left: 4em;
+      > div:first-child {
+        margin-right: 3em;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 3em;
+      }
+
+      > div:last-child {
+        margin-top: 6em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1026px) {
+  .sec9 {
+    .testimonials {
+      > div:last-child {
+        // margin-top: 0;
+        margin-right: 8em;
+        margin-left: 8em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:last-child {
+        // margin-top: 0;
+        margin-right: 8em;
+        margin-left: 8em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1148px) {
+  .sec9 {
+    .testimonials {
+      > div:nth-child(2) {
+        margin-right: 1.5em;
+      }
+
+      > div:last-child {
         margin-top: 0;
+        margin-right: 0;
+        margin-left: 1.5em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:nth-child(2) {
+        margin-right: 3em;
+      }
+
+      > div:last-child {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 3em;
       }
     }
   }
