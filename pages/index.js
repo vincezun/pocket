@@ -158,7 +158,7 @@ export class index extends React.Component {
             </p>
           </section>
         </div>
-        <section className='sec6 wrapper'>
+        <section className='sec6'>
           <div>
             <h3>15k</h3>
             <p>Active User</p>
@@ -199,7 +199,7 @@ export class index extends React.Component {
         <section className='sec9'>
           <div className='testimonials'>
             <div className='arya'>
-              <div className='wrapper'>
+              <div>
                 <figure>
                   <img
                     src='/static/images/arya.png'
@@ -213,14 +213,12 @@ export class index extends React.Component {
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, totam rem aperiam, eaque
                   ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur
                 </p>
               </div>
             </div>
 
             <div className='tyrion'>
-              <div className='wrapper'>
+              <div>
                 <figure>
                   <img
                     src='/static/images/tyrion.png'
@@ -234,14 +232,12 @@ export class index extends React.Component {
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, totam rem aperiam, eaque
                   ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur
                 </p>
               </div>
             </div>
 
             <div className='khal'>
-              <div className='wrapper'>
+              <div>
                 <figure>
                   <img
                     src='/static/images/khal.png'
@@ -254,9 +250,7 @@ export class index extends React.Component {
                 <p className='desc'>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur
+                  ipsa quae ab illo inventore
                 </p>
               </div>
             </div>
@@ -397,7 +391,7 @@ export class index extends React.Component {
                 <figcaption className='title'>Business structured</figcaption>
               </figure>
               <div>
-                <div className='firstBar wrapper'>
+                <div className='firstBar'>
                   <div className='authorInfo'>
                     <figure>
                       <img
@@ -420,7 +414,7 @@ export class index extends React.Component {
                     </figure>
                   </div>
                 </div>
-                <div className='wrapper'>
+                <div>
                   <p>
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
@@ -428,7 +422,7 @@ export class index extends React.Component {
                   </p>
                 </div>
                 <div className='border'>
-                  <div className='thirdBar wrapper'>
+                  <div className='thirdBar '>
                     <div className='likes'>
                       <figure>
                         <img
@@ -466,7 +460,7 @@ export class index extends React.Component {
                 </figcaption>
               </figure>
               <div>
-                <div className='firstBar wrapper'>
+                <div className='firstBar'>
                   <div className='authorInfo'>
                     <figure>
                       <img
@@ -490,7 +484,7 @@ export class index extends React.Component {
                   </div>
                 </div>
 
-                <div className='wrapper'>
+                <div>
                   <p>
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
@@ -499,7 +493,7 @@ export class index extends React.Component {
                 </div>
 
                 <div className='border'>
-                  <div className='thirdBar wrapper'>
+                  <div className='thirdBar'>
                     <div className='likes'>
                       <figure>
                         <img
@@ -535,7 +529,7 @@ export class index extends React.Component {
                 <figcaption className='title'>UX/UI design for App</figcaption>
               </figure>
               <div>
-                <div className='firstBar wrapper'>
+                <div className='firstBar'>
                   <div className='authorInfo'>
                     <figure>
                       <img
@@ -559,7 +553,7 @@ export class index extends React.Component {
                   </div>
                 </div>
 
-                <div className='wrapper'>
+                <div>
                   <p>
                     It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at
@@ -568,7 +562,7 @@ export class index extends React.Component {
                 </div>
 
                 <div className='border'>
-                  <div className='thirdBar wrapper'>
+                  <div className='thirdBar'>
                     <div className='likes'>
                       <figure>
                         <img
@@ -610,6 +604,7 @@ export class index extends React.Component {
                   id='email'
                   className='email'
                   placeholder='Enter your email address here'
+                  autoComplete='off'
                 />
                 <span className='submitBtn'>
                   <BlueBtn name='SEND' link='#send' />
