@@ -177,8 +177,12 @@ class Header extends React.Component {
                   <a>CONTACT</a>
                 </Link>
               </li>
-              <Separator />
-              <LoginBtn name='LOGIN' link='#login' styled={loginBtn} />
+              <li>
+                <Separator />
+              </li>
+              <li>
+                <LoginBtn name='LOGIN' link='#login' styled={loginBtn} />
+              </li>
             </ul>
           </div>
         </nav>
