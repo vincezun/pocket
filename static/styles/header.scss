@@ -28,7 +28,7 @@
   width: 100%;
   height: 6rem;
   line-height: 5.5rem;
-  // position: fixed;
+
   position: absolute;
   z-index: 5;
 
@@ -45,7 +45,7 @@
     bottom: 0;
     right: 0;
     z-index: 2;
-    transition: all 350ms ease;
+    // transition: all 350ms ease;
     width: 0px;
     // opacity: 0;
 
@@ -64,22 +64,23 @@
         cursor: pointer;
         padding: 1.5em 1.5em;
         z-index: 3;
+        transition: none;
       }
-    }
 
-    .socialLinks {
-      display: flex;
-      flex-direction: row;
-      margin: 1.4em 4.5em;
+      .socialLinks {
+        display: flex;
+        flex-direction: row;
+        margin: 1.4em 0em 1.4em 4em;
 
-      li {
-        list-style: none;
-        padding: 0em 0.8em;
+        li {
+          list-style: none;
+          padding: 0em 0.8em;
 
-        img {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
     }
@@ -91,7 +92,7 @@
       flex-direction: column;
       justify-content: inherit;
 
-      li {
+      li:not(:last-child) {
         text-transform: uppercase;
         list-style: none;
 
@@ -109,6 +110,10 @@
             color: $c-300-teal;
           }
         }
+      }
+
+      li:last-child {
+        list-style: none;
       }
     }
   }
@@ -162,5 +167,80 @@
 
   .hamburger {
     transition: none;
+  }
+}
+
+@media only screen and(min-width: 1082px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    .companyLogo {
+      margin: 2.8em 2.5em;
+    }
+
+    .overlay {
+      background-color: transparent;
+      position: fixed;
+      width: 100%;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-end;
+      position: absolute;
+
+      .topBar {
+        display: none;
+      }
+
+      .socialLinks {
+        display: none;
+      }
+
+      .navigationLinks {
+        position: relative;
+        height: 0;
+        display: inline-block;
+
+        li:not(:last-child) {
+          text-transform: uppercase;
+          list-style: none;
+          display: inline-block;
+          text-align: center;
+
+          a {
+            width: 130px;
+            font-size: 1.6em;
+            font-family: $f-medium;
+            color: $c-white;
+            text-decoration: none;
+            padding: 0 0.5em;
+
+            &:hover,
+            &:active {
+              color: $c-300-teal;
+            }
+          }
+        }
+
+        li:last-child {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .scrollActive.nav {
+    background-color: $c-900-gray;
+    height: 88px;
+    position: fixed;
+    transition: all 350ms ease;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+
+    .companyLogo {
+      margin: 2.8em 2.5em;
+      width: initial;
+      transition: all 350ms ease;
+    }
   }
 }
