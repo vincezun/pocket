@@ -37,32 +37,31 @@ export class index extends React.Component {
     };
     return (
       <Layout>
-        <div className='blueBg'>
-          <section className='sec1 wrapper'>
-            <div className='pocketApp'>
-              <h1>Sail Ahead In Your Career</h1>
-              <p>
-                This app does everything you could possibly want it to do and
-                not only that, beautifully carefully designed and extremely
-                intuitive to use.
-              </p>
-              <div className='buttons'>
-                <DownloadBtn name='DOWNLOAD' link='#download' />
-                <ReadMoreBtn
-                  name='READ MORE'
-                  link='#readmore'
-                  styled={readMoreBtn}
-                />
-              </div>
+        <section className='sec1 '>
+          <div className='pocketApp wrapper'>
+            <h1>Sail Ahead In Your Career</h1>
+            <p>
+              This app does everything you could possibly want it to do and not
+              only that, beautifully carefully designed and extremely intuitive
+              to use.
+            </p>
+            <div className='buttons'>
+              <DownloadBtn name='DOWNLOAD' link='#download' />
+              <ReadMoreBtn
+                name='READ MORE'
+                link='#readmore'
+                styled={readMoreBtn}
+              />
             </div>
+          </div>
 
-            <img
-              src='/static/images/app-screen.png'
-              alt='Pocket App Screen'
-              className='pocketScreen app'
-            />
-          </section>
-        </div>
+          <img
+            src='/static/images/app-screen.png'
+            alt='Pocket App Screen'
+            className='pocketScreen wrapper'
+          />
+        </section>
+
         <section className='sec2 wrapper'>
           <h2>One App All Wallets</h2>
           <LineSeparator styled={blueSeparator1} />
@@ -72,7 +71,7 @@ export class index extends React.Component {
             use.
           </p>
         </section>
-        <section className='sec3 wrapper'>
+        <section className='sec3 '>
           <div>
             <figure>
               <img
@@ -132,7 +131,7 @@ export class index extends React.Component {
             <img
               src='/static/images/financial-report.png'
               alt='Financial Report Details'
-              className='financialReport app'
+              className='financialReport'
             />
             <div className='financial'>
               <h2>Your Financial Report Details</h2>
@@ -148,7 +147,7 @@ export class index extends React.Component {
             </div>
           </section>
         </div>
-        <div className='blueContainer'>
+        <div className='sec5BlueContainer'>
           <section className='sec5 wrapper'>
             <h2>What We Achieved</h2>
             <p>
@@ -188,7 +187,7 @@ export class index extends React.Component {
           <img
             src='/static/images/expenses-report.png'
             alt='Expenses Report Details'
-            className='expensesReport app'
+            className='expensesReport'
           />
         </section>
         <section className='sec8 wrapper'>
@@ -232,6 +231,7 @@ export class index extends React.Component {
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, totam rem aperiam, eaque
                   ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae
                 </p>
               </div>
             </div>
@@ -344,28 +344,30 @@ export class index extends React.Component {
 
         <section className='sec11'>
           <div className='blueContainer'>
-            <div className='wrapper'>
-              <h5>Download Now</h5>
-              <ul>
-                <li>
-                  <a href='#appstore'>
-                    <img
-                      src='/static/images/app-store.png'
-                      alt='Download on the App Store'
-                      className='appStore'
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href='#googplay'>
-                    <img
-                      src='/static/images/google-play.png'
-                      alt='Get it on Google Play'
-                      className='googlePlay'
-                    />
-                  </a>
-                </li>
-              </ul>
+            <div className='downloadShapeBg'>
+              <div className='wrapper'>
+                <h5>Download Now</h5>
+                <ul>
+                  <li>
+                    <a href='#appstore'>
+                      <img
+                        src='/static/images/app-store.png'
+                        alt='Download on the App Store'
+                        className='appStore'
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#googplay'>
+                      <img
+                        src='/static/images/google-play.png'
+                        alt='Get it on Google Play'
+                        className='googlePlay'
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
