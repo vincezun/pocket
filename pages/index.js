@@ -1,40 +1,20 @@
-// import fetch from 'isomorphic-fetch';
+import Link from 'next/link';
+
 import '../static/styles/index.scss';
 
 import Layout from '../components/Layout/Layout';
-import DownloadBtn from '../components/buttons/whiteBtn';
-import ReadMoreBtn from '../components/buttons/transparentBtn';
-import LineSeparator from '../components/separator/line';
-import BlueBtn from '../components/buttons/blueBtn';
+import ReadMoreBtn from '../components/buttons/readMoreBtn';
+import ReadMoreBtn2 from '../components/buttons/readMoreBtn2';
+import LearnMoreBtn from '../components/buttons/learnMoreBtn';
+import ViewMoreBtn from '../components/buttons/viewMoreBtn';
+import PurchaseBtn from '../components/buttons/purchaseBtn';
+import DownloadBtn from '../components/buttons/downloadBtn';
+import SendBtn from '../components/buttons/sendBtn';
+import BlueLine1 from '../components/separator/blueLine1';
+import BlueLine2 from '../components/separator/blueLine2';
 
 export class index extends React.Component {
   render() {
-    const readMoreBtn = {
-      marginLeft: '3em'
-    };
-    const purchaseBtn = {
-      width: '140px'
-    };
-    const blueSeparator1 = {
-      height: '2px',
-      backgroundColor: '#1f65ff',
-      width: '10em',
-      marginTop: '.7em'
-    };
-    const blueSeparator2 = {
-      height: '2px',
-      backgroundColor: '#1f65ff',
-      width: '8em',
-      marginTop: '1.5em',
-      border: '1px solid #1f65ff',
-      borderRadius: '2px'
-    };
-    const blueSeparator3 = {
-      height: '2px',
-      backgroundColor: '#1f65ff',
-      width: '10em',
-      marginTop: '1.4em'
-    };
     return (
       <Layout>
         <section className='sec1 '>
@@ -46,12 +26,8 @@ export class index extends React.Component {
               to use.
             </p>
             <div className='buttons'>
-              <DownloadBtn name='DOWNLOAD' link='#download' />
-              <ReadMoreBtn
-                name='READ MORE'
-                link='#readmore'
-                styled={readMoreBtn}
-              />
+              <DownloadBtn link='#download' />
+              <ReadMoreBtn2 link='#readmore' />
             </div>
           </div>
 
@@ -64,7 +40,7 @@ export class index extends React.Component {
 
         <section className='sec2 wrapper'>
           <h2>One App All Wallets</h2>
-          <LineSeparator styled={blueSeparator1} />
+          <BlueLine1 />
           <p>
             This app does everything you could possibly want it to do and not
             only that, beautifully carefully designed and extremely intuitive to
@@ -81,12 +57,12 @@ export class index extends React.Component {
               />
               <figcaption>Manage Your Money</figcaption>
             </figure>
-            <LineSeparator styled={blueSeparator2} />
+            <BlueLine2 />
             <p>
               Now you can manage the whole your finances in one application.
             </p>
             <span className='learnMoreBtn'>
-              <BlueBtn name='LEARN MORE' link='#learnmore' />
+              <LearnMoreBtn link='#learnmore' />
             </span>
           </div>
 
@@ -99,12 +75,12 @@ export class index extends React.Component {
               />
               <figcaption>Your Financial Report</figcaption>
             </figure>
-            <LineSeparator styled={blueSeparator2} />
+            <BlueLine2 />
             <p>
               Now you can manage the whole your finances in one application.
             </p>
             <span className='learnMoreBtn'>
-              <BlueBtn name='LEARN MORE' link='#learnmore' />
+              <LearnMoreBtn link='#learnmore' />
             </span>
           </div>
 
@@ -117,12 +93,12 @@ export class index extends React.Component {
               />
               <figcaption>Secure Transaction</figcaption>
             </figure>
-            <LineSeparator styled={blueSeparator2} />
+            <BlueLine2 />
             <p>
               Now you can manage the whole your finances in one application.
             </p>
             <span className='learnMoreBtn'>
-              <BlueBtn name='LEARN MORE' link='#learnmore' />
+              <LearnMoreBtn link='#learnmore' />
             </span>
           </div>
         </section>
@@ -142,7 +118,7 @@ export class index extends React.Component {
                 intuitive to use.
               </p>
               <span className='readMoreBtn'>
-                <BlueBtn name='READ MORE' link='#readmore' />
+                <ReadMoreBtn link='#readmore' />
               </span>
             </div>
           </section>
@@ -181,7 +157,7 @@ export class index extends React.Component {
               use.
             </p>
             <span className='readMoreBtn'>
-              <BlueBtn name='READ MORE' link='#readmore' />
+              <ReadMoreBtn link='#readmore' />
             </span>
           </div>
           <img
@@ -192,7 +168,7 @@ export class index extends React.Component {
         </section>
         <section className='sec8 wrapper'>
           <h2>What Our User Say</h2>
-          <LineSeparator styled={blueSeparator3} />
+          <BlueLine1 />
         </section>
         <div className='blueContainer testimonial' />
         <section className='sec9'>
@@ -259,7 +235,7 @@ export class index extends React.Component {
         <section className='sec10'>
           <div className='plan wrapper'>
             <h2>Select Your Plan</h2>
-            <LineSeparator styled={blueSeparator3} />
+            <BlueLine1 />
             <p>
               This app does everything you could possibly want it to do and not
               only that, beautifully carefully designed and extremely intuitive
@@ -283,12 +259,8 @@ export class index extends React.Component {
                 <li>PSD to HTML</li>
                 <li>Digital Marketing</li>
               </ul>
-              <span className='purchaseBtn'>
-                <BlueBtn
-                  name='PURCHASE'
-                  link='#purchase'
-                  styled={purchaseBtn}
-                />
+              <span className='PurchaseBtn'>
+                <PurchaseBtn link='#purchase' />
               </span>
             </div>
             <div className='standard'>
@@ -307,12 +279,8 @@ export class index extends React.Component {
                 <li>PSD to HTML</li>
                 <li>Digital Marketing</li>
               </ul>
-              <span className='purchaseBtn'>
-                <BlueBtn
-                  name='PURCHASE'
-                  link='#purchase'
-                  styled={purchaseBtn}
-                />
+              <span className='PurchaseBtn'>
+                <PurchaseBtn link='#purchase' />
               </span>
             </div>
             <div className='premium'>
@@ -331,12 +299,8 @@ export class index extends React.Component {
                 <li>PSD to HTML</li>
                 <li>Digital Marketing</li>
               </ul>
-              <span className='purchaseBtn'>
-                <BlueBtn
-                  name='PURCHASE'
-                  link='#purchase'
-                  styled={purchaseBtn}
-                />
+              <span className='PurchaseBtn'>
+                <PurchaseBtn link='#purchase' />
               </span>
             </div>
           </div>
@@ -375,7 +339,7 @@ export class index extends React.Component {
         <section className='sec12'>
           <div className='wrapper latestBlogPosts'>
             <h2>Latest Blog Posts</h2>
-            <LineSeparator styled={blueSeparator3} />
+            <BlueLine1 />
             <p>
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
@@ -384,14 +348,22 @@ export class index extends React.Component {
 
           <div className='blogs'>
             <div className='blog1'>
-              <figure>
-                <img
-                  src='/static/images/business-structured.png'
-                  alt='Business Structured'
-                  className='business'
-                />
-                <figcaption className='title'>Business structured</figcaption>
-              </figure>
+              <Link href='#1'>
+                <a>
+                  <figure>
+                    <img
+                      src='/static/images/business-structured.png'
+                      alt='Business Structured'
+                      className='business'
+                    />
+
+                    <figcaption className='title'>
+                      Business structured
+                    </figcaption>
+                  </figure>
+                </a>
+              </Link>
+
               <div>
                 <div className='firstBar'>
                   <div className='authorInfo'>
@@ -416,13 +388,17 @@ export class index extends React.Component {
                     </figure>
                   </div>
                 </div>
-                <div>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                </div>
+                <Link href='#1'>
+                  <a>
+                    <div>
+                      <p>
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout.
+                      </p>
+                    </div>
+                  </a>
+                </Link>
                 <div className='border'>
                   <div className='thirdBar '>
                     <div className='likes'>
@@ -451,16 +427,20 @@ export class index extends React.Component {
             </div>
 
             <div className='blog2'>
-              <figure>
-                <img
-                  src='/static/images/hiring-developer.png'
-                  alt='Hiring Developer'
-                  className='developer'
-                />
-                <figcaption className='title'>
-                  We are hiring developer
-                </figcaption>
-              </figure>
+              <Link href='#2'>
+                <a>
+                  <figure>
+                    <img
+                      src='/static/images/hiring-developer.png'
+                      alt='Hiring Developer'
+                      className='developer'
+                    />
+                    <figcaption className='title'>
+                      We are hiring developer
+                    </figcaption>
+                  </figure>
+                </a>
+              </Link>
               <div>
                 <div className='firstBar'>
                   <div className='authorInfo'>
@@ -485,15 +465,17 @@ export class index extends React.Component {
                     </figure>
                   </div>
                 </div>
-
-                <div>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                </div>
-
+                <Link href='#2'>
+                  <a>
+                    <div>
+                      <p>
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout.
+                      </p>
+                    </div>
+                  </a>
+                </Link>
                 <div className='border'>
                   <div className='thirdBar'>
                     <div className='likes'>
@@ -522,14 +504,20 @@ export class index extends React.Component {
             </div>
 
             <div className='blog3'>
-              <figure>
-                <img
-                  src='/static/images/ux-ui-design.png'
-                  alt='UX/UI Design'
-                  className='uxUiDesign'
-                />
-                <figcaption className='title'>UX/UI design for App</figcaption>
-              </figure>
+              <Link href='#3'>
+                <a>
+                  <figure>
+                    <img
+                      src='/static/images/ux-ui-design.png'
+                      alt='UX/UI Design'
+                      className='uxUiDesign'
+                    />
+                    <figcaption className='title'>
+                      UX/UI design for App
+                    </figcaption>
+                  </figure>
+                </a>
+              </Link>
               <div>
                 <div className='firstBar'>
                   <div className='authorInfo'>
@@ -554,15 +542,17 @@ export class index extends React.Component {
                     </figure>
                   </div>
                 </div>
-
-                <div>
-                  <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout.
-                  </p>
-                </div>
-
+                <Link href='#3'>
+                  <a>
+                    <div>
+                      <p>
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout.
+                      </p>
+                    </div>
+                  </a>
+                </Link>
                 <div className='border'>
                   <div className='thirdBar'>
                     <div className='likes'>
@@ -590,8 +580,8 @@ export class index extends React.Component {
               </div>
             </div>
           </div>
-          <span className='viewMoreBtn'>
-            <BlueBtn name='VIEW MORE' link='#viewmore' />
+          <span className='ViewMoreBtn'>
+            <ViewMoreBtn link='#viewmore' />
           </span>
         </section>
 
@@ -609,7 +599,7 @@ export class index extends React.Component {
                   autoComplete='off'
                 />
                 <span className='submitBtn'>
-                  <BlueBtn name='SEND' link='#send' />
+                  <SendBtn link='#send' />
                 </span>
               </div>
             </div>
