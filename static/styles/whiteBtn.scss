@@ -23,3 +23,11 @@
     color: $c-white;
   }
 }
+
+@media only screen and(min-width: 1024px) {
+  .whiteBtn {
+    font-size: 1.6em;
+    height: 50px;
+    width: 150px;
+  }
+}

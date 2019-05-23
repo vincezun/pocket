@@ -16,3 +16,11 @@
   transition: 450ms;
   text-decoration: none;
 }
+
+@media only screen and(min-width: 1024px) {
+  .blueBtn {
+    font-size: 1.6em;
+    height: 50px;
+    width: 150px;
+  }
+}
