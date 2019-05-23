@@ -20,6 +20,11 @@ export default class MyApp extends App {
       <Container>
         <Head>
           <title>Pocket</title>
+          <link
+            rel='icon'
+            type='image/x-icon'
+            href='/static/images/favicon.ico'
+          />
         </Head>
         <Component {...pageProps} />
       </Container>
