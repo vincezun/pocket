@@ -1,0 +1,19 @@
+@import '_colors.scss';
+
+.blueLine1 {
+  border: none;
+  height: 2px;
+  background-color: $c-500-blue;
+  width: 10em;
+  margin-top: 0.7em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and(min-width: 1024px) {
+  .blueLine1 {
+    height: 3px;
+    width: 15em;
+    margin-top: 1.2em;
+  }
+}

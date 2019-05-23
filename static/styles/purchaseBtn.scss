@@ -1,0 +1,26 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.purchaseBtn {
+  font-family: $f-medium;
+  font-size: 1.2em;
+  color: $c-white;
+  height: 36px;
+  width: 140px;
+  border-radius: 50px;
+  border: 2px solid $c-500-blue;
+  background-color: $c-500-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 450ms;
+  text-decoration: none;
+}
+
+@media only screen and(min-width: 1024px) {
+  .purchaseBtn {
+    font-size: 1.6em;
+    height: 50px;
+    width: 200px;
+  }
+}
