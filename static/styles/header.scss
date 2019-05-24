@@ -164,6 +164,15 @@
   }
 }
 
+@media only screen and(min-width: 320px) and (max-width: 812px) and (orientation: landscape) {
+  .nav {
+    .overlay {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+}
+
 @media only screen and(min-width: 1082px) {
   .hamburger {
     display: none;
