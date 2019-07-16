@@ -1,0 +1,335 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.hamburger {
+  position: absolute;
+  top: 1.2em;
+  right: 0.5em;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 350ms ease-in-out;
+  cursor: pointer;
+  padding: 1.5em 1.5em;
+}
+
+.active {
+  .menu {
+    position: fixed;
+  }
+
+  .hamburger {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 350ms ease-in-out;
+  }
+}
+
+.nav {
+  width: 100%;
+  height: 6rem;
+  line-height: 5.5rem;
+
+  position: absolute;
+  z-index: 5;
+
+  .companyLogo {
+    margin: 1.9em 1.9em;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+
+  .overlay {
+    background-color: $c-900-gray;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    transition: 350ms ease;
+    width: 0px;
+    float: right;
+
+    &.active {
+      width: 260px;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .topBar {
+      display: flex;
+      flex-direction: row;
+      margin: 1em 1em;
+
+      .exit {
+        cursor: pointer;
+        padding: 1.5em 1.5em;
+        z-index: 3;
+        transition: none;
+      }
+
+      .socialLinks {
+        display: flex;
+        flex-direction: row;
+        margin: 1.4em 0em 1.4em 4em;
+
+        li {
+          list-style: none;
+          padding: 0em 0.8em;
+
+          img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .navigationLinks {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: inherit;
+
+      li:not(:last-child) {
+        text-transform: uppercase;
+        list-style: none;
+
+        a {
+          display: block;
+          width: 260px;
+          font-size: 1.6em;
+          font-family: $f-medium;
+          color: $c-white;
+          text-decoration: none;
+          padding: 0em 1.5em;
+
+          &:hover,
+          &:active {
+            color: $c-300-teal;
+          }
+        }
+      }
+
+      li:last-child {
+        list-style: none;
+        margin: 2em 2.5em;
+      }
+    }
+  }
+}
+
+.btnLogin {
+  margin: 1.8em;
+  background-color: transparent;
+  border-color: $c-white;
+}
+
+.scrollDisabled {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.scrollActive.nav {
+  background-color: $c-900-gray;
+  height: 45px;
+  position: fixed;
+  transition: 350ms ease;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+
+  .companyLogo {
+    width: 80px;
+    margin: 1.1em 1.8em;
+    transition: 350ms ease;
+  }
+
+  .hamburger {
+    top: 0.1em;
+    right: 0.3em;
+    position: fixed;
+    transition: 350ms ease;
+  }
+}
+
+.noTransition.nav {
+  transition: none;
+
+  .companyLogo {
+    transition: none;
+  }
+
+  .hamburger {
+    transition: none;
+  }
+}
+
+@media only screen and(min-width: 320px) and (max-width: 812px) and (orientation: landscape) {
+  .nav {
+    .overlay {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+}
+
+@media only screen and(min-width: 1082px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    height: 95px;
+
+    .companyLogo {
+      margin: 2.8em 2.5em;
+    }
+
+    .overlay {
+      background-color: transparent;
+      position: fixed;
+      width: 100%;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-end;
+      position: absolute;
+      transition: none;
+      height: 90px;
+
+      .topBar {
+        display: none;
+      }
+
+      .socialLinks {
+        display: none;
+      }
+
+      .navigationLinks {
+        position: relative;
+        height: 0;
+        display: inline-block;
+
+        li:not(:last-child) {
+          text-transform: uppercase;
+          list-style: none;
+          display: inline-block;
+          text-align: center;
+
+          a {
+            width: 130px;
+            font-size: 1.6em;
+            font-family: $f-medium;
+            color: $c-white;
+            text-decoration: none;
+            padding: 0 0.5em;
+
+            &:hover,
+            &:active {
+              color: #f7ff00;
+            }
+          }
+        }
+
+        li:last-child {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .scrollActive.nav {
+    height: 88px;
+    transition: 350ms ease;
+
+    .companyLogo {
+      margin: 2.8em 2.5em;
+      width: initial;
+      transition: 350ms ease;
+    }
+
+    .navigationLinks {
+      transition: 350ms ease;
+
+      li:not(:last-child) {
+        a {
+          &:hover,
+          &:active {
+            color: $c-300-teal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1200px) {
+  .nav {
+    height: 95px;
+
+    .companyLogo {
+      width: 160px;
+    }
+
+    .overlay {
+      height: 90px;
+
+      .navigationLinks {
+        margin-top: 1.25em;
+      }
+    }
+  }
+
+  .scrollActive.nav {
+    .overlay {
+      .navigationLinks {
+        margin-top: 0.1em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1600px) {
+  .nav {
+    height: 110px;
+
+    .companyLogo {
+      position: relative;
+      margin-left: 8.2em;
+    }
+
+    .navWrapper {
+      margin-top: 2em;
+      width: 1600px;
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .overlay {
+      position: relative;
+
+      .navigationLinks {
+        margin-right: 5.3em;
+      }
+    }
+  }
+
+  .scrollActive.nav {
+    transition: 350ms ease;
+
+    .companyLogo {
+      margin-top: 0;
+      margin-left: 8.2em;
+      width: 160px;
+      transition: 350ms ease;
+    }
+
+    .overlay {
+      .navigationLinks {
+        transition: 350ms ease;
+        margin-top: -2em;
+      }
+    }
+  }
+}

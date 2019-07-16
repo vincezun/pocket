@@ -1,0 +1,1732 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+*:root {
+  font-size: 10px;
+}
+
+p {
+  font-family: $f-regular;
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+.wrapper {
+  margin: 0em 1.9em;
+}
+
+.sec1 {
+  background-image: url('/static/images/blue-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 470px;
+  width: 100%;
+  color: $c-white;
+  text-align: center;
+
+  .pocketApp {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  h1 {
+    font-family: $f-bold;
+    font-size: 3.7em;
+    text-align: left;
+  }
+
+  p {
+    margin-top: 2em;
+    text-align: left;
+  }
+
+  .buttons {
+    display: flex;
+    margin-top: 3.5em;
+    width: 350px;
+    justify-content: space-between;
+  }
+
+  .pocketScreen {
+    display: none;
+  }
+}
+
+h2 {
+  font-family: $f-bold;
+  font-size: 3.5em;
+  line-height: 1.4em;
+  color: $c-900-blue;
+}
+
+.sec2 {
+  text-align: center;
+  margin-top: 5em;
+
+  p {
+    color: $c-200-gray;
+    margin-top: 2em;
+  }
+}
+
+.sec3 {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  div {
+    box-shadow: 0px 1px 6px 2px rgba(93, 112, 223, 0.1);
+    border-radius: 10px;
+    height: 324px;
+    width: 320px;
+  }
+
+  > div:nth-child(n) {
+    margin-top: 6em;
+  }
+
+  .money {
+    width: 39px;
+  }
+
+  .report {
+    width: 55px;
+  }
+
+  .secure {
+    width: 36px;
+  }
+
+  .icon {
+    margin-top: 3.5em;
+  }
+
+  figcaption {
+    font-family: $f-semibold;
+    font-size: 1.7em;
+    margin-top: 1.25em;
+    color: $c-800-gray;
+  }
+
+  p {
+    color: $c-200-gray;
+    margin: 1.5em 3em 0;
+  }
+
+  .learnMoreBtn {
+    display: flex;
+    justify-content: center;
+    margin: 2.5em 0;
+  }
+}
+
+.lightBlueContainer {
+  background-color: $c-200-blue;
+  margin-top: 5.5em;
+  text-align: center;
+
+  .sec4 {
+    h2 {
+      padding-top: 0.7em;
+      text-align: left;
+    }
+
+    p {
+      color: $c-200-gray;
+      margin: 2em 0 0;
+      text-align: left;
+    }
+
+    .readMoreBtn {
+      display: flex;
+      padding: 2em 0 5.5em;
+    }
+
+    .financialReport {
+      width: 250px;
+    }
+  }
+}
+
+.sec5BlueContainer {
+  background-color: $c-500-blue;
+
+  .sec5 {
+    padding: 6em 0 15em;
+    text-align: center;
+    color: $c-white;
+
+    h2 {
+      color: $c-white;
+    }
+
+    p {
+      margin-top: 2em;
+    }
+  }
+}
+
+.sec6 {
+  background-color: $c-white;
+  text-align: center;
+  width: 207px;
+  height: 630px;
+  box-shadow: 0px 1px 10px 1px rgba(128, 83, 254, 0.1);
+  border-radius: 10px;
+  margin-top: -11em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    &:nth-child(n) {
+      margin: 6em 0;
+    }
+  }
+
+  h3 {
+    font-family: $f-bold;
+    font-size: 4.5em;
+    color: $c-500-blue;
+  }
+
+  p {
+    font-family: $f-medium;
+    font-size: 1.8em;
+    margin-top: 0.7em;
+    color: $c-800-gray;
+  }
+}
+
+.sec7 {
+  text-align: center;
+
+  h2 {
+    padding-top: 2em;
+    text-align: left;
+  }
+
+  p {
+    color: $c-200-gray;
+    margin: 2em 0 0;
+    text-align: left;
+  }
+
+  .readMoreBtn {
+    display: flex;
+    justify-content: left;
+    margin-top: 3.5em;
+  }
+
+  .expensesReport {
+    width: 250px;
+    margin-top: 5em;
+  }
+}
+
+.sec8 {
+  text-align: center;
+  margin-top: 6em;
+}
+
+.testimonial {
+  width: 100%;
+  height: 300px;
+  margin-top: 5em;
+}
+
+.sec9 {
+  text-align: center;
+
+  .aryaStark,
+  .tyrionLannister,
+  .khalDrogo {
+    margin-top: -3.5em;
+    box-shadow: 0px 0px 6px rgba(0, 80, 225, 0.16);
+    border-radius: 50px;
+    width: 65px;
+  }
+
+  figcaption {
+    font-size: 1.8em;
+    font-family: $f-bold;
+    color: $c-900-blue;
+    margin-top: 1.25em;
+  }
+
+  .position {
+    font-size: 1.4em;
+    font-family: $f-medium;
+    color: $c-300-gray;
+    margin-top: 0.4em;
+  }
+
+  .desc {
+    color: $c-900-gray;
+    font-size: 1.3em;
+    margin-top: 2.25em;
+    padding: 0em 2.3em 3em;
+    line-height: 1.8em;
+  }
+
+  .arya,
+  .tyrion,
+  .khal {
+    box-shadow: 0px 0px 8px rgba(0, 80, 225, 0.16);
+    border-radius: 10px;
+    width: 322px;
+    height: 275px;
+    background-color: $c-white;
+  }
+
+  > div:first-child {
+    margin-top: -20.5em;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    > div:nth-last-of-type(-n + 2) {
+      margin-top: 7.5em;
+    }
+  }
+}
+
+.sec10 {
+  text-align: center;
+
+  .plan {
+    h2 {
+      margin-top: 3em;
+    }
+
+    p {
+      color: $c-200-gray;
+      line-height: 2em;
+      margin-top: 2.5em;
+    }
+  }
+
+  .plans {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    div:nth-child(n) {
+      margin-top: 4.5em;
+    }
+  }
+
+  .grayShapeContainer {
+    font-family: $f-semibold;
+    color: $c-500-blue;
+    background-image: url('/static/images/plans-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .blueShapeContainer {
+    font-family: $f-semibold;
+    color: $c-white;
+    background-image: url('/static/images/plans-bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  ul {
+    margin-top: 2em;
+
+    li {
+      list-style: none;
+      font-size: 1.6em;
+      font-family: $f-medium;
+      color: $c-400-gray;
+      line-height: 2.8em;
+    }
+  }
+
+  .blueShapeContainer,
+  .grayShapeContainer {
+    h5 {
+      margin-top: -1em;
+      font-size: 2.3em;
+    }
+
+    h4 {
+      margin-top: 0.7em;
+      font-size: 3.5em;
+    }
+
+    p {
+      font-size: 1.8em;
+      font-family: $f-regular;
+      margin-top: 0.3em;
+    }
+  }
+
+  .basic,
+  .standard,
+  .premium {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgba(93, 112, 223, 0.24);
+  }
+
+  .PurchaseBtn {
+    display: flex;
+    justify-content: center;
+    margin: 2.5em 0em 4em;
+  }
+}
+
+.blueContainer {
+  background-color: $c-500-blue;
+}
+
+.sec11 {
+  margin-top: 6em;
+
+  .wrapper {
+    padding: 6em 0em 3.5em;
+  }
+
+  h5 {
+    font-size: 2.5em;
+    font-family: $f-bold;
+    color: $c-white;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 3.5em;
+
+    li {
+      list-style: none;
+      line-height: 6em;
+
+      .appStore,
+      .googlePlay {
+        width: 270px;
+      }
+    }
+  }
+}
+
+.sec12 {
+  .latestBlogPosts {
+    margin-top: 4em;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    p {
+      margin-top: 2.5em;
+      color: $c-200-gray;
+    }
+  }
+
+  .blogs {
+    margin-top: 5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+    }
+
+    .firstBar,
+    .thirdBar {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 1.8em;
+
+      .authorInfo {
+        figure {
+          display: inline-flex;
+          align-items: center;
+        }
+
+        figcaption {
+          font-size: 1.1em;
+          font-family: $f-bold;
+          color: $c-800-blue;
+          margin-left: 1em;
+        }
+      }
+
+      .time {
+        margin-left: 4.5em;
+
+        figure {
+          display: inline-flex;
+          align-items: center;
+
+          img {
+            width: 17px;
+          }
+        }
+
+        figcaption {
+          font-size: 1.1em;
+          font-family: $f-regular;
+          color: $c-300-gray;
+          margin-left: 0.8em;
+        }
+      }
+
+      .likes,
+      .comments {
+        margin: 1.2em 0;
+        figure {
+          display: inline-flex;
+          align-items: center;
+
+          img {
+            width: 17px;
+          }
+        }
+
+        figcaption {
+          font-size: 1.1em;
+          font-family: $f-regular;
+          color: $c-800-blue;
+          margin-left: 0.5em;
+        }
+      }
+
+      .comments {
+        margin-left: 5.5em;
+      }
+    }
+
+    p {
+      font-size: 1.1em;
+      font-family: $f-regular;
+      color: $c-300-gray;
+      margin: 1.7em 1.8em;
+    }
+
+    .border {
+      border-top: 1px solid rgba($c-100-gray, 0.42);
+    }
+
+    .business,
+    .developer,
+    .uxUiDesign {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 320px;
+    }
+
+    .title {
+      font-size: 2.1em;
+      font-family: $f-medium;
+      color: $c-800-blue;
+      margin: 1.25em 0.85em 0.9em;
+    }
+
+    .blog1,
+    .blog2,
+    .blog3 {
+      border-radius: 10px;
+      border-left: 1px solid rgba($c-100-gray, 0.42);
+      border-right: 1px solid rgba($c-100-gray, 0.42);
+      border-bottom: 1px solid rgba($c-100-gray, 0.42);
+      width: 320px;
+    }
+
+    .blog2,
+    .blog3 {
+      margin-top: 4em;
+    }
+  }
+
+  .ViewMoreBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+  }
+}
+
+.sec13 {
+  margin-top: 6em;
+  text-align: center;
+
+  .email {
+    margin-top: 2em;
+    font-size: 1.4em;
+    font-family: $f-regular;
+    color: $c-300-blue;
+    padding: 0em 1.5em;
+    line-height: 3em;
+    width: 250px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: $c-100-teal;
+    text-align: center;
+
+    &::placeholder {
+      color: $c-300-blue;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2pt solid $c-500-blue;
+    }
+  }
+
+  .submitBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    padding-bottom: 7em;
+  }
+
+  .subscribe {
+    border-radius: 10px;
+    box-shadow: 0px -3px 8px rgba(31, 101, 225, 0.1);
+    background-color: $c-white;
+    margin-bottom: -17.5em;
+  }
+
+  h2 {
+    padding-top: 1.8em;
+  }
+
+  .oneLine {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.subscribeDarkBlueContainer {
+  height: 200px;
+  background-color: $c-900-blue;
+  position: relative;
+  z-index: -1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .sec1 {
+    .buttons {
+      width: 270px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .sec1 {
+    p {
+      margin-right: 5em;
+    }
+  }
+
+  .sec2 {
+    margin-top: 5em;
+  }
+
+  .sec3 {
+    div {
+      height: 322px;
+      width: 390px;
+    }
+
+    .icon {
+      margin-top: 3.2em;
+    }
+
+    p {
+      margin-top: 2em;
+    }
+
+    figcaption {
+      margin-top: 2em;
+    }
+  }
+
+  .sec9 {
+    .arya,
+    .tyrion,
+    .khal {
+      width: 350px;
+      height: 275px;
+    }
+  }
+
+  .sec10 {
+    .basic,
+    .standard,
+    .premium {
+      width: 390px;
+      height: 650px;
+    }
+
+    .grayShapeContainer,
+    .blueShapeContainer {
+      height: 255px;
+
+      h5 {
+        margin-top: -3em;
+        font-size: 2.3em;
+      }
+    }
+  }
+
+  .sec13 {
+    .email {
+      margin-top: 0;
+      padding: 0;
+      height: 40px;
+      width: 310px;
+      text-align: left;
+      padding-left: 2em;
+
+      &:focus {
+        height: 34px;
+        width: 304px;
+      }
+    }
+
+    .submitBtn {
+      margin-top: 0;
+      padding-bottom: 0;
+      margin-left: -5em;
+    }
+
+    .oneLine {
+      margin-top: 3em;
+      padding-bottom: 5.5em;
+    }
+  }
+}
+
+@media only screen and(min-width: 578px) {
+  .sec3 {
+    > div:nth-child(1) {
+      margin-right: 1.5em;
+      margin-left: 1.5em;
+    }
+
+    > div:nth-child(2) {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+  }
+
+  .sec9 {
+    .testimonials {
+      div:nth-child(2) {
+        margin-top: 7.5em;
+      }
+    }
+  }
+
+  .sec10 {
+    .plan p {
+      padding: 0em 5em;
+    }
+
+    .plans {
+      margin: 0em 3em;
+
+      > div:nth-child(1) {
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+      }
+    }
+  }
+
+  .sec11 ul li {
+    padding: 1em;
+  }
+
+  .sec12 {
+    .latestBlogPosts {
+      p {
+        padding: 0em 5em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 644px) {
+  .sec1 {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+    h1 {
+      margin-right: 2em;
+    }
+
+    p {
+      margin-right: 2em;
+    }
+
+    .pocketApp {
+      position: relative;
+      top: 2%;
+      transform: translateY(-2%);
+    }
+
+    .pocketScreen {
+      display: block;
+      height: 459px;
+      margin-top: 14.5em;
+      margin-right: 0.8em;
+    }
+  }
+
+  .sec2 {
+    margin-top: 10em;
+  }
+
+  .sec9 {
+    .testimonials {
+      > div:nth-child(2) {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:nth-child(2) {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 664px) {
+  .sec9 {
+    .testimonials {
+      > div:nth-child(2) {
+        margin-right: 4em;
+        margin-left: 4em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:nth-child(2) {
+        margin-right: 4em;
+        margin-left: 4em;
+      }
+    }
+  }
+
+  .sec13 {
+    .email {
+      width: 450px;
+
+      &:focus {
+        height: 34px;
+        width: 444px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 724px) {
+  .sec2 {
+    p {
+      width: 686px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .sec9 {
+    .testimonials {
+      > div:nth-child(2) {
+        margin-right: 7em;
+        margin-left: 7em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:first-child {
+        margin-right: 1.5em;
+      }
+
+      > div:nth-child(2) {
+        margin-top: 0;
+
+        margin-right: 0;
+        margin-left: 1.5em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 774px) {
+  .wrapper {
+    margin: 0em 5em;
+  }
+
+  .sec1 {
+    .pocketScreen {
+      margin-left: 0;
+      margin-right: 3em;
+    }
+  }
+
+  .sec2 {
+    margin-top: 10em;
+  }
+
+  .sec3 {
+    > div:last-child {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+  }
+
+  .lightBlueContainer {
+    margin-top: 7em;
+
+    .sec4 {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+
+      .financialReport {
+        width: 250px;
+        height: 218px;
+      }
+
+      .financial {
+        margin: 3em 2em 1.5em;
+      }
+
+      .readMoreBtn {
+        padding-bottom: 8em;
+      }
+    }
+  }
+
+  .sec5 {
+    p {
+      width: 724px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .sec6 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    width: 720px;
+    height: 207px;
+    align-items: center;
+
+    div:nth-child(n) {
+      margin: 0em 6em;
+    }
+  }
+
+  .sec7 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 4.5em;
+
+    .expensesReport {
+      width: 250px;
+      height: 302px;
+    }
+
+    h2 {
+      padding-top: 2.5em;
+      margin-right: 4em;
+    }
+
+    p {
+      margin-right: 4em;
+    }
+  }
+
+  .sec8 {
+    margin-top: 8em;
+  }
+
+  .sec9 {
+    .testimonials {
+      > div:first-child {
+        margin-right: 1.5em;
+      }
+
+      > div:nth-child(2) {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 1.5em;
+      }
+
+      > div:last-child {
+        // margin-top: 6em;
+      }
+    }
+  }
+
+  .sec10 {
+    .plans {
+      margin: 0;
+      justify-content: center;
+
+      > div:last-child {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+      }
+    }
+  }
+
+  .sec11 {
+    .blueContainer {
+      margin-top: 8em;
+    }
+  }
+
+  .sec12 {
+    .latestBlogPosts {
+      margin-top: 8em;
+    }
+
+    .blogs {
+      > div:first-child {
+        margin-right: 2em;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 2em;
+      }
+    }
+  }
+
+  .sec13 {
+    display: flex;
+    justify-content: center;
+
+    .subscribe {
+      width: 720px;
+      margin-bottom: -10.5em;
+    }
+  }
+}
+
+@media only screen and(min-width: 846px) {
+  .wrapper {
+    margin: 0em 6em;
+  }
+
+  .sec1 {
+    height: 550px;
+
+    h1 {
+      margin: 0;
+    }
+
+    .pocketScreen {
+      margin-right: 6em;
+      margin-left: 0;
+    }
+  }
+
+  .sec2 {
+    margin-top: 10em;
+  }
+
+  .sec7 {
+    margin-top: 4.5em;
+  }
+
+  .sec8 {
+    margin-top: 8em;
+  }
+}
+
+@media only screen and(min-width: 1006px) {
+  .wrapper {
+    margin: 0em 8em;
+  }
+
+  .sec1 {
+    .pocketScreen {
+      margin-right: 8em;
+    }
+  }
+
+  .sec2 {
+    margin-top: 10em;
+  }
+
+  .sec7 {
+    margin-top: 4.5em;
+  }
+
+  .sec8 {
+    margin-top: 8em;
+  }
+
+  .sec9 {
+    .testimonials {
+      > div:first-child {
+        margin-right: 1.5em;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 1.5em;
+      }
+
+      > div:last-child {
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:first-child {
+        margin-right: 3em;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 3em;
+      }
+
+      > div:last-child {
+        margin-top: 6em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1022px) {
+  .sec9 {
+    .testimonials {
+      > div:last-child {
+        margin-right: 8em;
+        margin-left: 8em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:last-child {
+        margin-right: 8em;
+        margin-left: 8em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1024px) {
+  p {
+    font-size: 1.6em;
+    line-height: 1.8em;
+  }
+
+  h2 {
+    font-size: 5em;
+  }
+
+  .sec1 {
+    height: 700px;
+
+    .pocketApp {
+      h1 {
+        font-size: 8em;
+      }
+    }
+
+    .pocketScreen {
+      width: 300px;
+      height: 587px;
+      margin-top: 25em;
+    }
+  }
+
+  .sec2 {
+    margin-top: 16em;
+  }
+
+  .sec3 {
+    > div:nth-child(n) {
+      width: 460px;
+      height: 380px;
+
+      &:hover {
+        box-shadow: 0px 5px 32px 3px rgba(93, 112, 223, 0.2);
+      }
+    }
+
+    .icon {
+      margin-top: 4.45em;
+    }
+
+    .money {
+      width: 48px;
+    }
+
+    .report {
+      width: 69px;
+    }
+
+    .secure {
+      width: 46px;
+    }
+
+    p {
+      margin-top: 1.25em;
+    }
+
+    figcaption {
+      font-size: 2.3em;
+      margin-top: 1.5em;
+    }
+  }
+
+  .lightBlueContainer {
+    margin-top: 10em;
+    .sec4 {
+      .financialReport {
+        width: 300px;
+        height: 261px;
+      }
+
+      .readMoreBtn {
+        padding-top: 5.5em;
+      }
+    }
+  }
+
+  .sec5blueContainer {
+    height: 400px;
+
+    .sec5 {
+      h2 {
+        margin-top: 0.35em;
+      }
+
+      p {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .sec6 {
+    width: 900px;
+    box-shadow: 0px 3px 20px 2px rgba(128, 83, 254, 0.1);
+
+    h3 {
+      font-size: 5em;
+    }
+
+    p {
+      font-size: 2em;
+      margin-top: 0.5em;
+    }
+  }
+
+  .sec7 {
+    .expensesReport {
+      width: 300px;
+      height: 361px;
+      margin-top: 11em;
+    }
+
+    h2 {
+      padding-top: 1em;
+    }
+
+    .readMoreBtn {
+      margin-top: 5.5em;
+    }
+  }
+
+  .sec9 {
+    .testimonial {
+      height: 300px;
+    }
+
+    .testimonials {
+      > div:nth-child(n) {
+        width: 370px;
+        height: 332px;
+        box-shadow: 0px 2px 16px rgba(0, 80, 225, 0.16);
+      }
+
+      .aryaStark,
+      .tyrionLannister,
+      .khalDrogo {
+        width: 80px;
+        margin-top: -4em;
+      }
+
+      .desc {
+        font-size: 1.5em;
+        padding: 0em 3em;
+        line-height: 1.8em;
+        margin-top: 1em;
+      }
+
+      figcaption {
+        font-size: 2em;
+        margin-top: 1em;
+      }
+
+      .position {
+        font-size: 1.6em;
+        margin-top: 0.2em;
+      }
+    }
+
+    > div:first-child {
+      margin-top: -20.5em;
+    }
+  }
+
+  .sec10 {
+    .plan {
+      p {
+        width: 864px;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+
+    .plans {
+      > div:nth-child(n) {
+        width: 460px;
+        height: 691px;
+        box-shadow: 0px 0px 32px 2px rgba(93, 112, 223, 0.24);
+      }
+
+      .PurchaseBtn {
+        margin-top: 2.9em;
+        margin-bottom: 0;
+      }
+    }
+
+    .grayShapeContainer,
+    .blueShapeContainer {
+      height: 298px;
+    }
+
+    .grayShapeContainer,
+    .blueShapeContainer {
+      h5 {
+        font-size: 2.5em;
+      }
+
+      h4 {
+        font-size: 5em;
+      }
+
+      p {
+        font-size: 2em;
+      }
+    }
+
+    ul {
+      li {
+        font-size: 1.8em;
+        line-height: 2.3em;
+      }
+    }
+  }
+
+  .sec11 {
+    .blueContainer {
+      height: 300px;
+
+      h5 {
+        font-size: 4em;
+        margin-top: 0.2em;
+      }
+
+      .appStore {
+        width: 282px;
+      }
+
+      .googlePlay {
+        width: 283px;
+      }
+
+      ul {
+        margin-top: 2.25em;
+        li {
+          padding: 1.7em;
+        }
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      margin-top: 5em;
+
+      > div:nth-child(n) {
+        &:hover {
+          box-shadow: 0px 6px 20px 1px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .firstBar,
+      .thirdBar {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 1.8em;
+
+        .authorInfo {
+          figure {
+            display: inline-flex;
+            align-items: center;
+          }
+
+          figcaption {
+            font-size: 1.5em;
+            margin-left: 1em;
+          }
+        }
+
+        .time {
+          margin-left: 4.5em;
+
+          figure {
+            display: inline-flex;
+            align-items: center;
+
+            img {
+              width: 20px;
+            }
+          }
+
+          figcaption {
+            font-size: 1.5em;
+            margin-left: 0.8em;
+          }
+        }
+
+        .likes,
+        .comments {
+          margin: 2.5em 0;
+          figure {
+            img {
+              width: 20px;
+            }
+          }
+
+          figcaption {
+            font-size: 1.5em;
+            margin-left: 0.5em;
+          }
+        }
+
+        .comments {
+          margin-left: 5.5em;
+        }
+      }
+
+      p {
+        font-size: 1.4em;
+        margin: 1.7em 1.8em;
+      }
+
+      .business,
+      .developer,
+      .uxUiDesign {
+        width: 370px;
+      }
+
+      .title {
+        font-size: 2.5em;
+        margin: 0.9em 0.85em 0.5em;
+      }
+
+      .blog1,
+      .blog2,
+      .blog3 {
+        width: 370px;
+      }
+    }
+
+    .ViewMoreBtn {
+      margin-top: 5em;
+    }
+  }
+
+  .sec13 {
+    margin-top: 10em;
+
+    .subscribe {
+      width: 1000px;
+    }
+
+    h2 {
+      padding-top: 1em;
+    }
+
+    .email {
+      font-size: 1.6em;
+      height: 54px;
+      width: 686px;
+      border-radius: 50px;
+
+      &:focus {
+        height: 48px;
+        width: 681px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1236px) {
+  .sec9 {
+    .testimonials {
+      > div:nth-child(2) {
+        margin-right: 1.5em;
+      }
+
+      > div:last-child {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 1.5em;
+      }
+    }
+  }
+
+  .sec12 {
+    .blogs {
+      > div:nth-child(2) {
+        margin-right: 3em;
+      }
+
+      > div:last-child {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 3em;
+      }
+    }
+  }
+
+  .sec13 {
+    .email {
+      &:focus {
+        height: 3.05em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1277px) {
+  .sec6 {
+    width: 1170px;
+    height: 240px;
+
+    > div:nth-child(n) {
+      margin: 0em 10em;
+    }
+  }
+}
+
+@media only screen and(min-width: 1376px) {
+  .sec1 {
+    height: 815px;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+    h1 {
+      width: 796px;
+    }
+
+    p {
+      width: 588px;
+    }
+
+    .pocketApp {
+      margin-right: 0;
+    }
+
+    .pocketScreen {
+      width: 404px;
+      height: 791px;
+      margin-left: 3.5em;
+    }
+  }
+
+  .lightBlueContainer {
+    height: 530px;
+
+    .sec4 {
+      .financialReport {
+        width: 519px;
+        height: 452px;
+      }
+    }
+  }
+
+  .sec7 {
+    .expenses {
+      margin-top: 15em;
+    }
+
+    .expensesReport {
+      width: 466px;
+      height: 562px;
+    }
+  }
+
+  .sec8 {
+    margin-top: 10em;
+  }
+
+  .sec11 {
+    .blueContainer {
+      margin-top: 10em;
+
+      .downloadShapeBg {
+        background-image: url('/static/images/download-shape.svg');
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 100%;
+      }
+    }
+  }
+
+  .sec12 {
+    margin-top: 10em;
+  }
+
+  .sec13 {
+    .subscribe {
+      width: 1117px;
+    }
+  }
+}
+
+@media only screen and(min-width: 1384px) {
+  .lightBlueContainer {
+    .sec4 {
+      p {
+        width: 670px;
+      }
+    }
+  }
+
+  .sec7 {
+    p {
+      width: 670px;
+    }
+  }
+}
+
+@media only screen and(min-width: 1470px) {
+  .sec1 {
+    .pocketApp {
+      margin-right: 10em;
+      margin-left: 7em;
+    }
+
+    .pocketScreen {
+      margin-right: 4em;
+      margin-top: 25em;
+    }
+  }
+}
+
+@media only screen and(min-width: 1600px) {
+  .sec1 {
+    height: 870px;
+    background-position: center bottom;
+
+    .pocketScreen {
+      margin-left: 17em;
+    }
+  }
+
+  .sec2 {
+    margin-top: 20em;
+  }
+
+  .lightBlueContainer {
+    height: 550px;
+
+    .sec4 {
+      .financial {
+        margin: 5em 0em 0em 5em;
+
+        p {
+          margin-top: 1.5em;
+        }
+      }
+    }
+
+    .sec7 {
+      p {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}

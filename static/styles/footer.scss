@@ -1,0 +1,236 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.darkBlueContainer {
+  background-color: $c-900-blue;
+
+  .pageWrapper {
+    padding: 5.6em 1.9em 2.4em;
+
+    .footerShapeBg {
+      display: none;
+    }
+
+    .heading {
+      color: $c-white;
+      font-size: 1.8em;
+      font-family: $f-medium;
+    }
+
+    p,
+    a {
+      color: $c-300-blue;
+      font-size: 1.4em;
+      font-family: $f-regular;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .companyDesc {
+      p {
+        margin-top: 1.3em;
+        line-height: 1.7em;
+      }
+
+      .socialLinks {
+        display: flex;
+        flex-direction: row;
+        margin: 1.9em -0.7em 0em;
+
+        li {
+          padding: 0em 0.8em;
+        }
+      }
+    }
+
+    .navLinks {
+      margin-top: 5em;
+
+      ul {
+        margin-top: 1.5em;
+
+        li {
+          line-height: 3em;
+        }
+      }
+    }
+
+    .contactInfo li {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        align-self: flex-start;
+        padding: 1.1em 0;
+      }
+
+      p {
+        line-height: 1.8em;
+        padding: 0.5em 1em 0.5em;
+      }
+    }
+
+    .copyright {
+      margin-top: 4em;
+      line-height: 1.7em;
+    }
+  }
+}
+
+@media only screen and(min-width: 327px) {
+  .darkBlueContainer {
+    .pageWrapper {
+      > div:nth-child(1) {
+        width: 289px;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 760px) {
+  .darkBlueContainer {
+    .pageWrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      > div:nth-child(n) {
+        width: 289px;
+      }
+
+      .contactInfo {
+        .address {
+          width: 200px;
+        }
+      }
+
+      > div:nth-child(2) {
+        margin-top: 0;
+      }
+
+      > div:nth-child(even) {
+        margin-left: 12em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1024px) {
+  .darkBlueContainer {
+    .footerShapeBg {
+      background-image: url('/static/images/footer-shape.svg');
+      background-repeat: no-repeat;
+      background-position: 100% 22%;
+      background-size: contain;
+    }
+
+    .pageWrapper {
+      .companyLogo {
+        width: 180px;
+      }
+
+      .socialLinks {
+        padding-top: 2em;
+
+        li {
+          img {
+            width: 25px;
+          }
+
+          &:nth-last-of-type(-n + 4) {
+            padding-right: 1.5em;
+          }
+        }
+      }
+
+      p,
+      a {
+        font-size: 1.6em;
+      }
+
+      .heading {
+        font-size: 2em;
+      }
+
+      .companyDesc p,
+      .copyright {
+        line-height: 1.8em;
+      }
+
+      .navLinks {
+        ul li {
+          line-height: 4.5em;
+        }
+      }
+
+      > div:nth-child(n) {
+        width: 330px;
+      }
+
+      .contactInfo {
+        li img {
+          width: 20px;
+        }
+      }
+
+      > div:nth-child(even) {
+        margin-right: 10em;
+        margin-left: 10em;
+      }
+
+      > div:nth-child(odd) {
+        margin-left: 10em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1428px) {
+  .darkBlueContainer {
+    .pageWrapper {
+      > div:nth-child(even) {
+        margin-right: 25em;
+        margin-left: 15em;
+      }
+
+      > div:nth-child(odd) {
+        margin-left: 25em;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 1600px) {
+  .darkBlueContainer {
+    .pageWrapper {
+      margin: 0;
+
+      > div:first-child {
+        margin-left: 0;
+      }
+
+      > div:nth-child(3) {
+        margin-top: 0;
+        margin-left: 5em;
+      }
+
+      > div:nth-child(4) {
+        margin-top: 0;
+        margin-left: 5em;
+        margin-right: 0;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 15em;
+        margin-right: 0;
+        width: 250px;
+      }
+    }
+  }
+}

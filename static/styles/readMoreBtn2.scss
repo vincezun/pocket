@@ -1,0 +1,25 @@
+@import '_colors.scss';
+@import '_typography.scss';
+
+.readMoreBtn2 {
+  font-family: $f-medium;
+  font-size: 1.4em;
+  color: $c-white;
+  height: 36px;
+  width: 116px;
+  border-radius: 50px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 450ms;
+  text-decoration: none;
+}
+
+@media only screen and(min-width: 1024px) {
+  .readMoreBtn2 {
+    font-size: 1.6em;
+    height: 50px;
+    width: 150px;
+  }
+}
